@@ -11437,9 +11437,8 @@ body {
 }
 .flash-component {
   align-items: center;
-  background-color: #272727 !important;
+  background-color: #000000 !important;
   box-sizing: border-box;
-  background: linear-gradient(270deg, #FFED00 0.69%, #F5F1B6 13.11%, #FEEC06 25%, #FDEB11 75.69%, #F5F1B6 87.59%, #FFED00 100%) !important;
   display: flex;
   justify-content: center;
   min-height: 30px;
@@ -11456,7 +11455,7 @@ body {
 .flash-component a:link,
 .flash-component a:hover,
 .flash-component a:visited {
-  color: #000 !important;
+  color: #FFC31A !important;
   text-decoration: none;
 }
 .flash-component__text {
@@ -11464,10 +11463,11 @@ body {
   font-weight: 300;
   letter-spacing: 1px;
   margin: 0;
+  color: #FFC31A;
 }
 .flash-component__text p {
   display: inline;
-  color: #000 !important;
+  color: #FFC31A !important;
   font-weight: 500;
 }
 .flash-component__subtext {
@@ -12240,6 +12240,7 @@ input[data-js="attributes-toggle"]:checked + .toggle-menu span:nth-child(2) {
   }
   .flash-component__text {
       font-size: 14px;
+      color: #FFC31A;
   }
   .flash-component__subtext {
       font-size: 12px;
@@ -12929,10 +12930,7 @@ input[data-js="attributes-toggle"]:checked + .toggle-menu span:nth-child(2) {
   outline: none !important;
 }
 
-.line-gradient{
-  height: 1px;
-  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, #FFED00 10%, rgba(255,255,255,1) 20%, #FFED00 25%, #FFED00 75%, rgba(255,255,255,1) 80%, #FFED00 90%, rgba(0,0,0,1) 100%);
-} 
+
 
 .frame-1{
   display: flex;
@@ -12940,7 +12938,7 @@ input[data-js="attributes-toggle"]:checked + .toggle-menu span:nth-child(2) {
   align-items: center;
   max-width: 100%;
   height: 7rem;
-  background: linear-gradient(90deg, rgba(43,41,1,1) 0%, rgba(0,0,0,1) 15%, rgba(0,0,0,1) 85%, rgba(43,41,1,1) 100%);
+  background-color: #FFC31A;
   gap: 2rem;
 }
 
@@ -12956,38 +12954,38 @@ input[data-js="attributes-toggle"]:checked + .toggle-menu span:nth-child(2) {
   margin-right: 10rem;
 }
 
-.frame-1-2 > button{ 
-  background: linear-gradient(#FFED00, #FFF9AD, #FFED00);
-  border-radius: 100%;
+.frame-1-2-1 > button{ 
+  background: inherit;
   padding: 5px;
-  border: solid 1px #000;
+  border: none;
 }
 
-.frame-1-2 > button:hover{
-  background: linear-gradient(#A6A1A2, #FFFFFF, #A6A1A2);
-}
 
 .frame-1-2-1{
   display: flex;
   align-items: center;
   justify-content: end;
-  width: 100%;
+  width: 90%;
+  background-color: #fff;
+  border: solid 2px black;
+  border-radius: 8px;
+  padding: 0px 5px 0px 5px;
 }
 
 .frame-1-2-1 > input{
     display: block;
-    width: 80%;
+    width: 100%;
+    border: none;
+  
     height: 0rem;
-    border: solid 1px #ececed;
-    border-radius: 50px;
     background-color: #FFFF;
     padding: 18px;
     margin-right: 2rem;
-    color: #ececed;
+    color: #000;
 }
 
 .frame-1-2-1 > input::placeholder{
-  color: #ececed;
+  color: #000;
   font-family: "Poppins";
   font-size: 15px;
 }
@@ -13008,24 +13006,24 @@ gap: 5px;
 text-decoration: none;
 color: #FFED00 !important;
 font-size: 12px;
+transition: .2s ease-in-out;
 }
 
 .frame-1-3 > a:hover{
-  color: #ececed !important;
+transition: .3s ease-in-out;
+transform: scale(0.9);
+mix-blend-mode: difference;
 }
 
 
-.frame-1-3 > a:hover svg path {
-  fill: #ececed;
-}
 
 .frame-2{
   display: flex;
   justify-content: center;
   align-items: center;
   background: #000;
-  height: 3rem;
-  gap: 2rem;
+  height: 4rem;
+  /* gap: 2rem; */
 }
 
 .frame-2 > a {
@@ -13034,7 +13032,7 @@ font-size: 12px;
   justify-content: center;
   height: 100%;
   width: 200px;
-  color: rgba(255, 237, 0, 1) !important;
+  color: #fff !important;
   text-decoration: none;
   font-size: 15px;
   font-weight: 300;
